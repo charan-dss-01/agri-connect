@@ -40,6 +40,7 @@ function Login() {
       setPassword("");
       setRole("");
       navigateTo("/");
+     window.location.reload();
     } catch (error) {
       toast.error(
         error.response?.data?.message || "Login failed"
